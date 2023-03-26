@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapPage extends StatefulWidget {
@@ -20,11 +18,12 @@ class _MapPageState extends State<MapPage> {
             width: double.infinity,
             height: 300,
             child: GoogleMap(
+              mapType: MapType.hybrid,
                 initialCameraPosition: CameraPosition(
               target: LatLng(40.122484263699, 65.17661555327517),
               zoom: 14,
             ),),
-          )
+          ),
         ],
       ),
     );

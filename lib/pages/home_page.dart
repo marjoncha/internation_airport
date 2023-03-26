@@ -16,34 +16,34 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFFC2CFF0),
+      backgroundColor: const Color(0xfffc2cff0),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Color(0XFFFC2CFF0),
+        backgroundColor: const Color(0xfffc2cff0),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.notifications_none_outlined,
               size: 30,
-              color: Color(0xFFF727171),
+              color: Color(0xfff727171),
             ),
           ),
         ],
         leading: IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.help_outline,
               size: 30,
-              color: Color(0xFFF727171),
+              color: Color(0xfff727171),
             )),
-        title: Center(
+        title: const Center(
           child: Text(
             "Home",
             style: TextStyle(
               fontFamily: "Montserrat",
               fontWeight: FontWeight.bold,
-              color: Color(0xFFF4E4E4E),
+              color: Color(0xfff4e4e4e),
             ),
           ),
         ),
@@ -54,32 +54,32 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              child: Text(
+              margin: const EdgeInsets.symmetric(horizontal: 20),
+              child: const Text(
                 "Find your flight",
                 style: TextStyle(
                   fontFamily: "Montserrat",
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFFF727171),
+                  color: Color(0xfff727171),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 6,
             ),
             Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5), color: Colors.white),
-              margin: EdgeInsets.symmetric(horizontal: 20),
+              margin: const EdgeInsets.symmetric(horizontal: 20),
               child: TextField(
                 decoration: InputDecoration(
-                  contentPadding: EdgeInsets.only(top: 5, left: 10),
+                  contentPadding: const EdgeInsets.only(top: 5, left: 10),
                   hintText: "Flight number or airport",
-                  hintStyle: TextStyle(
-                      color: Color(0xFFFA4A4A4),
+                  hintStyle: const TextStyle(
+                      color: Color(0xfffa4a4a4),
                       fontFamily: "Montserrat",
                       fontSize: 20),
-                  suffixIcon: Icon(
+                  suffixIcon: const Icon(
                     (Icons.search),
                     size: 30,
                   ),
@@ -92,7 +92,7 @@ class _HomeState extends State<Home> {
             Container(
               width: 462,
               height: 158,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage("assets/images/plane.png"),
@@ -100,11 +100,11 @@ class _HomeState extends State<Home> {
               ),
             ),
             Container(
-              color: Color(0xFFFEBF0FC),
-              child: TabBar(
+              color: const Color(0xfffebf0fc),
+              child: const TabBar(
                   indicatorColor: Colors.orange,
                   labelColor: Colors.orange,
-                  unselectedLabelColor: Color(0xFFFA4A4A4),
+                  unselectedLabelColor: Color(0xfffa4a4a4),
                   tabs: [
                     Tab(
                       text: "Current flight",
@@ -117,8 +117,10 @@ class _HomeState extends State<Home> {
                     ),
                   ]),
             ),
-            Expanded(
-                child: TabBarView(children: [
+            const Expanded(
+                child: TabBarView(
+                  physics: NeverScrollableScrollPhysics(),
+                  children: [
               CurrentFlight(),
               MapPage(),
               ShopPage(),
