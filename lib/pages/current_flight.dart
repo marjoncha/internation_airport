@@ -17,7 +17,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
         child: Column(
           children: [
             Container(
-              color: Color(0xFFFF5F8FF),
+              color: const Color(0xffff5f8ff),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -26,7 +26,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Weather",
                           style:
@@ -40,20 +40,19 @@ class _CurrentFlightState extends State<CurrentFlight> {
                           style:
                               TextStyle(fontSize: 16, fontFamily: "Montserrat"),
                         ),
-                        SizedBox(
-                          width: 250,
-                        ),
+                       
                       ],
                     ),
-                    Image(
+                    const Spacer(),
+                    const Image(
                       width: 37,
                       height: 37,
                       image: AssetImage("assets/images/rain.png"),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    Image(
+                    const Image(
                       width: 37,
                       height: 37,
                       image: AssetImage("assets/images/gradus.png"),
@@ -63,7 +62,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
               ),
             ),
             Container(
-              color: Color(0xFFFFCFDFF),
+              color: const Color(0xffffcfdff),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -73,13 +72,13 @@ class _CurrentFlightState extends State<CurrentFlight> {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                             width: 30,
                             height: 30,
-                            child: Image(
+                            child: const Image(
                                 image:
                                     AssetImage("assets/images/location.png"))),
-                        Text(
+                        const Text(
                           "Spain",
                           style: TextStyle(
                               color: Colors.orange,
@@ -89,7 +88,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
                         ),
                       ],
                     ),
-                    Text(
+                    const Text(
                       "Avoid travel to Spain. If you must travel to Spain, make sure you are fully vaccinated before travel. Travelers should follow recommendations or requirements in Spain, including wearing a mask and staying 6 feet apart from others.",
                       style: TextStyle(fontFamily: "Montserrat", fontSize: 15),
                     ),
@@ -98,7 +97,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
               ),
             ),
             Container(
-              color: Color(0xFFFFCFDFF),
+              color: const Color(0xffffcfdff),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -108,13 +107,13 @@ class _CurrentFlightState extends State<CurrentFlight> {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                             width: 30,
                             height: 30,
-                            child: Image(
+                            child: const Image(
                                 image:
                                     AssetImage("assets/images/location.png"))),
-                        Text(
+                        const Text(
                           "Uganda",
                           style: TextStyle(
                               color: Colors.orange,
@@ -124,7 +123,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
                         ),
                       ],
                     ),
-                    Text(
+                    const Text(
                       "All travelers are required to temperature checks and will be screened by the Port Health authorities upon their arrival. If the temperature is above normal, or any kind of COVID-19 symptoms are displayed, travelers may be required to take a COVID-19 test. ",
                       style: TextStyle(fontFamily: "Montserrat", fontSize: 15),
                     ),
@@ -133,7 +132,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
               ),
             ),
             Container(
-              color: Color(0xFFFFCFDFF),
+              color: const Color(0xffffcfdff),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -143,13 +142,13 @@ class _CurrentFlightState extends State<CurrentFlight> {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                             width: 30,
                             height: 30,
-                            child: Image(
+                            child: const Image(
                                 image:
                                     AssetImage("assets/images/location.png"))),
-                        Text(
+                        const Text(
                           "Netherlands",
                           style: TextStyle(
                               color: Colors.orange,
@@ -159,7 +158,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
                         ),
                       ],
                     ),
-                    Text(
+                    const Text(
                       "Transit through Netherlands you require a visa.A paper or embassy visa is the only type of visa available for visitors. Typically the visa is a stamp or sticker added to your passport. You must submit your application through the consulate or local visa center.",
                       style: TextStyle(fontFamily: "Montserrat", fontSize: 15),
                     ),
@@ -168,7 +167,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
               ),
             ),
             Container(
-              color: Color(0xFFFFCFDFF),
+              color: const Color(0xffffcfdff),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -178,13 +177,13 @@ class _CurrentFlightState extends State<CurrentFlight> {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                             width: 30,
                             height: 30,
-                            child: Image(
+                            child: const Image(
                                 image:
                                     AssetImage("assets/images/location.png"))),
-                        Text(
+                        const Text(
                           "Spain",
                           style: TextStyle(
                               color: Colors.orange,
@@ -194,7 +193,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
                         ),
                       ],
                     ),
-                    Text(
+                    const Text(
                       "Avoid travel to Spain. If you must travel to Spain, make sure you are fully vaccinated before travel. Travelers should follow recommendations or requirements in Spain, including wearing a mask and staying 6 feet apart from others.",
                       style: TextStyle(fontFamily: "Montserrat", fontSize: 15),
                     ),
@@ -203,7 +202,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
               ),
             ),
             Container(
-              color: Color(0xFFFFCFDFF),
+              color: const Color(0xffffcfdff),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(
@@ -213,13 +212,13 @@ class _CurrentFlightState extends State<CurrentFlight> {
                   children: [
                     Row(
                       children: [
-                        Container(
+                        SizedBox(
                             width: 30,
                             height: 30,
-                            child: Image(
+                            child: const Image(
                                 image:
                                     AssetImage("assets/images/location.png"))),
-                        Text(
+                        const Text(
                           "Spain",
                           style: TextStyle(
                               color: Colors.orange,
@@ -229,7 +228,7 @@ class _CurrentFlightState extends State<CurrentFlight> {
                         ),
                       ],
                     ),
-                    Text(
+                    const Text(
                       "Avoid travel to Spain. If you must travel to Spain, make sure you are fully vaccinated before travel. Travelers should follow recommendations or requirements in Spain, including wearing a mask and staying 6 feet apart from others.",
                       style: TextStyle(fontFamily: "Montserrat", fontSize: 15),
                     ),
